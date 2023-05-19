@@ -66,7 +66,7 @@ def surf_to_texture(surf):
     return tex
 
 t = 300
-t_dir = 1
+t_dir = 0.5
 
 
 while True:

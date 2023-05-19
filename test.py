@@ -1,5 +1,12 @@
 import pygame, sys
 
+'''
+This file is to test the performance with and without moderngl
+
+Without ModernGL 120 FPS (This file)
+With ModernGL 670 FPS (shaders.py)
+'''
+
 display = pygame.display.set_mode((800, 800))
 clock = pygame.time.Clock()
 img = pygame.image.load('img.png')

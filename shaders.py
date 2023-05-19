@@ -68,10 +68,11 @@ def surf_to_texture(surf):
 t = 300
 t_dir = 1
 
+
 while True:
     display.fill((0, 0, 0))
     display.blit(img, pygame.mouse.get_pos())
-    
+    print(clock.get_fps())
     t += 1 * t_dir
     if t == 800 or t == 299:
         t_dir *= -1
@@ -90,6 +91,7 @@ while True:
     pygame.display.flip()
     
     frame_tex.release()
+    clock.tick(1000)
     
-    clock.tick(60)
+    
     
